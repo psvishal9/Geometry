@@ -77,3 +77,13 @@ class Rectangle
         System.out.println("Area of the rectangle: " + l * b);
     }
 }
+        try {
+            // Display areas using loop
+            for (GeometricShape shape : shapesList) {
+                shape.displayArea();
+            }
+        } catch (Exception e) {
+            System.err.println("An error occurred: " + e.getMessage());
+        } finally {
+            System.out.println("Calculation complete.");
+        }
